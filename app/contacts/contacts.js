@@ -9,6 +9,7 @@ angular.module('myApp.contacts', ['ngRoute'])
   });
 }])
 
-.controller('ContactsCtrl', [function() {
+.controller('ContactsCtrl', ['$scope', '$firebaseArray',function($scope, $firebaseArray) { //allows us to bind data to and form the view from the controller
 
 }]);
+//inject firebase as well as in paramaters
