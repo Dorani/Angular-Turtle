@@ -1,7 +1,7 @@
 <div class="row" ng-controller="ContactsCtrl">
      <div class="col-md-5">
        <h3>Add Contact</h3>
-       <form>
+       <form ng-submit="addContact()">
           <div class="form-group">
             <label>Name</label>
             <input type="text" class="form-control" ng-model="name" placeholder="Name">>
@@ -10,6 +10,11 @@
           <div class="form-group">
             <label>Email</label>
             <input type="email" class="form-control" ng-model="email" placeholder="Email">>
+          </div>
+
+          <div class="form-group">
+            <label>Phone</label>
+            <input type="text" class="form-control" ng-model="phone" placeholder="Phone Number">>
           </div>
 
       </form>
